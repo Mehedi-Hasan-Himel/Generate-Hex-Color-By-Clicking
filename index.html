@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,18 @@
    <link rel="stylesheet" href="./css/style.css">
    <!-- CSS Link End -->
 </head>
+
 <body>
-   
+
    <section id="root" class="container">
-      <h1 id="output"></h1>
+      <!-- <h1 id="output"></h1> -->
       <h1>Change the background color by clicking the following button.</h1>
-      <!-- <input type="text" disabled value="#000000" id="output"> -->
+      <div id="input-group">
+         <input type="text" disabled value="#000000" id="output">
+         <button class="copy-btn" id="copy-btn" title="copy to clipboard">
+            copy
+         </button>
+      </div>
       <button id="change-btn">Change Color</button>
    </section>
 
@@ -24,4 +31,5 @@
    <script src="./js/script.js"></script>
    <!-- JavaScript Link End -->
 </body>
+
 </html>

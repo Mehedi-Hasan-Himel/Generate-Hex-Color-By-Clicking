@@ -23,8 +23,14 @@ body {
   align-items: center;
 }
 #output {
-  font-size: 3em;
-  margin-bottom: 2em;
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+#copy-btn {
+  font-size: 0.9em;
+  background-color: #fff;
+  color: black;
+  padding: 0.5em;
 }
 button {
   padding: 1rem 3rem;

@@ -6,13 +6,18 @@ window.onload = () => {
 
 function main() {
   const root = document.getElementById(`root`);
-  const btn = document.getElementById(`change-btn`);
   const output = document.getElementById(`output`);
+  const changeBtn = document.getElementById(`change-btn`);
+  const copyBtn = document.getElementById(`copy-btn`);
 
-  btn.addEventListener(`click`, function () {
+  changeBtn.addEventListener(`click`, function () {
     const bgColor = hexColor();
     root.style.backgroundColor = bgColor;
-    output.innerHTML = `Hex Color Code: ${bgColor}`;
+    output.value = bgColor;
+  });
+  copyBtn.addEventListener(`click`, function () {
+    navigator.clipboard.writeText(output.value);
+    generateToastMessage(`${output.value} copied`);
   });
 }
 
@@ -29,3 +34,4 @@ function hexColor() {
 
   return result;
 }
+
